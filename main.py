@@ -56,4 +56,3 @@ def get_messages():
 
     messages = [{"id": r[0], "text": r[1], "time": r[2].isoformat()} for r in rows]
     return jsonify(messages)
-
